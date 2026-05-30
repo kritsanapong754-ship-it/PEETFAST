@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Friend Dash Admin</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<section class="card">
+
+<h2>เพิ่มตัวละคร</h2>
+
+<input id="charName" placeholder="ชื่อตัวละคร">
+
+<input id="charTier" placeholder="Tier">
+
+<input id="charRate" type="number" placeholder="Rate">
+
+<input id="charImage" placeholder="Image URL">
+
+<textarea
+id="charDesc"
+placeholder="คำอธิบาย">
+</textarea>
+
+<label>
+
+<input
+type="checkbox"
+id="charSecret">
+
+ตัวละครลับ
+
+</label>
+
+<button id="saveCharacter">
+บันทึกตัวละคร
+</button>
+
+</section>
+
+<section class="card">
+
+<h2>เพิ่มด่าน</h2>
+
+<input id="levelName"
+placeholder="ชื่อด่าน">
+
+<input id="levelDifficulty"
+placeholder="Difficulty">
+
+<input id="levelReward"
+type="number"
+placeholder="Reward">
+
+<button id="saveLevel">
+บันทึกด่าน
+</button>
+
+</section>
+
+<script type="module"
+src="admin.js"></script>
+
+</body>
+</html>
