@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Friend Dash</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+
+</head>
+<body>
+
+<div id="login-screen">
+
+    <div class="card">
+
+        <h1>Friend Dash</h1>
+
+        <input
+            type="text"
+            id="profileName"
+            placeholder="ชื่อโปรไฟล์">
+
+        <button id="googleLogin">
+            Login With Google
+        </button>
+
+    </div>
+
+</div>
+
+<div id="main-screen" class="hidden">
+
+    <nav>
+
+        <h2 id="welcomeName"></h2>
+
+        <div>
+
+            <span>
+                🐷
+                <span id="coinCount">0</span>
+            </span>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section class="menu">
+
+        <button id="playBtn">
+            เล่นเกม
+        </button>
+
+        <button id="gachaBtn">
+            กาชา
+        </button>
+
+        <button id="leaderboardBtn">
+            Leaderboard
+        </button>
+
+        <button id="profileBtn">
+            โปรไฟล์
+        </button>
+
+    </section>
+
+</div>
+
+<div id="game-container"></div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="auth.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
